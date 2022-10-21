@@ -8,7 +8,7 @@ for i in range(len(list_numbers)):
         max_index = i
 
 
-list_numbers[9] = list_numbers[-1]
-list_numbers[-1] = max_number
+list_numbers[9], list_numbers[-1] = list_numbers[-1], list_numbers[9]
+
 
 print(list_numbers)
